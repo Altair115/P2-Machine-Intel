@@ -1,0 +1,5 @@
+project(OOP2Wk3)
+add_executable(OOP2_Wk3 main.cpp myMath.cpp calculator.cpp calculator.h)
+add_executable(OOP2_Wk3_Benchmark test.cpp myMath.cpp)
+target_compile_definitions(OOP2_Wk3_Benchmark PUBLIC CATCH_CONFIG_ENABLE_BENCHMARKING)
+target_link_libraries(OOP2_Wk3_Benchmark PUBLIC CONAN_PKG::Catch2)
